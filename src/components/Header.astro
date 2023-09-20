@@ -13,4 +13,17 @@ import Themetoggle from './Themetoggle.astro'
     <span class="gpt-subtitle">Haha GPT 免费</span>
   </div>
   <p mt-1 op-30>-搞个大新闻</p>
+<div
+                  onClick={toggleAlipayImage}
+                  style={{ cursor: 'pointer' }}
+                >
+                  {t('support.alipay', { ns: 'about' })} (xiexie)
+                </div>
+                {showAlipayImage && (
+                  <img
+                    className='rounded-md w-68 h-64'
+                    src='https://r2.adone.eu.org/2023/1212179045b6cb0e9fd97b9c9fd12205.png'
+                    alt='Support us through Alipay'
+                  />
+
 </header>
