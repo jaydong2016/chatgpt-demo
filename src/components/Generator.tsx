@@ -10,7 +10,7 @@ import type { ChatMessage, ErrorMessage } from '@/types'
 export default () => {
   let inputRef: HTMLTextAreaElement
   const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal('')
-  const [systemRoleEditing, setSystemRoleEditing] = createSignal(false)
+  const [systemRoleEditing, setSystemRoleEditing] = createSignal(true)
   const [messageList, setMessageList] = createSignal<ChatMessage[]>([])
   const [currentError, setCurrentError] = createSignal<ErrorMessage>()
   const [currentAssistantMessage, setCurrentAssistantMessage] = createSignal('')
